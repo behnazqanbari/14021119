@@ -1,0 +1,58 @@
+.figma{
+    width: auto;
+    height: 280px;
+    background: rgba(39.37, 45.72, 55.25, 0.99); 
+    border: 1px solid black;
+    border-radius: 10px;
+
+}
+
+.left{
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    position: relative;
+    left: 50px;
+    top: 50px;
+    color: white;
+    font-size: 25px;
+    line-height: 40px;
+}
+/* .location{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+} */
+
+.center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+    top: -250px;
+    right: 100px;
+
+}
+.Sunny{
+    /* display: flex;
+    align-items: flex-end;
+    justify-content: center; */
+    font-size: 22px;
+    color: white;
+ 
+}
+
+input{
+    width: auto;
+    height: 53px;
+    color: white;
+    font-size: 22px;
+    position: relative;
+    top: 10px;
+    background: linear-gradient(91deg, rgba(144, 217, 224, 0.90) 0%, rgba(84, 96, 230, 0.90) 100%);
+    border: 1px solid rgb(68, 127, 255);
+     border-radius: 10px;
+}
+
+
