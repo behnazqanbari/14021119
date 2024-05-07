@@ -1,0 +1,261 @@
+
+<!DOCTYPE html>
+ <html class="no-js"> 
+	<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>grid</title>
+    <!-- <link rel="stylesheet" href="mediya.css"> -->
+	<style>
+ body{
+  display: grid;
+  grid-template-areas:
+   "header header "
+  "nav section  " 
+  ;
+
+grid-template-columns: 20% 1fr 0% 20%;
+grid-template-rows: 80px 1fr 0px 20%;
+gap: 8px 20px;
+  height: 200vh;
+  margin: 10px;
+  font-family:"Poppins";
+  color: #732F88;
+ }
+ nav{
+  grid-area: nav ;
+ }
+ .canti{
+  display: grid;
+  grid-template-rows: none;
+  padding: 5px;
+ }
+.menu{
+  width: 1px;
+  height: 2px;
+  size: 25px;
+  color: #3629B7;
+}
+.men{
+  width: 79px;
+  height: 21px;
+font-size: 14px;
+font-weight: 400;
+line-height: 21px;
+text-align: left; 
+color: #838383;
+list-style-type: none;
+}
+@media screen and (max-width: 768px) {
+  .canti {
+    flex-direction: column;
+  }
+  .men {
+    display: none;
+  }
+  .canti .menu {
+    display: block;
+  }
+}
+ .listul{ 
+  padding: 10px;
+margin-top: 40px;
+      font-size: 16px;
+      font-weight: 100;
+      list-style-type: none;
+  }
+ section{
+  grid-area: section ;
+ }
+ .water{
+  display: grid;
+  grid-template-columns: 10% 60fr 25% 50%;
+  border-radius: 12px 12px 12px 12px;
+  opacity: 0px;
+  background-color: #e2e4e7;
+  padding: 5px;
+ }
+ @media only screen and (max-width: 600px) {
+  img {
+    width: 100%;
+    height: auto;
+  }
+}
+ p{
+  color: #11263C;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 24px;
+  text-align: left;
+ }
+ @media only screen and (max-width: 600px) {
+  p {
+    font-size: 14px;
+  }
+}
+ .three-box{
+  display: grid;
+  grid-template-columns: 210fr 210fr 210fr;
+  grid-template-rows: 90fr 90fr 90fr;
+  border-radius: 5px 5px 5px 5px;
+  gap: 5px 45px;
+  padding: 15px;
+
+ }
+ @media only screen and (max-width: 768px) {
+  .water {
+      font-size: 14px;
+  }
+}
+.green{
+height: 55px;
+border-radius: 5px 5px 5px 5px;
+border: 1px;
+background-color: #BAE7B6;
+font-size: 16px;
+font-weight: 700;
+line-height: 24px;
+text-align: center;
+
+
+}
+.purple{
+  height: 55px;
+  border-radius: 5px 5px 5px 5px;
+  border: 1px; 
+  background-color:#D8D3F5; 
+  font-size: 16px;
+font-weight: 700;
+line-height: 24px;
+text-align: center;
+
+}
+.pink{
+  height: 55px;
+  border-radius: 5px 5px 5px 5px;
+  border: 1px;
+  background-color: #F3D5C8;
+  font-size: 16px;
+font-weight: 700;
+line-height: 24px;
+text-align: center;
+
+}
+@media (max-width: 768px) {
+  .three-box {
+    grid-template-columns: 1fr;
+  }
+}
+.box{
+  display: grid;
+  grid-template-columns: 10fr 10fr 10fr;
+  grid-template-rows: 30fr 10fr 10fr;
+border-radius: 20px 20px 20px 20px;
+border: 1px 1px 1px 1px;
+background-color: #FFFFFF;
+box-shadow: 30px 30.239999771118164px 20px 0px #00000005;
+padding: 10px;
+}
+.green-box{
+padding: 24px 48px 24px 24px;
+border-radius: 16px 16px 16px 16px;
+width: 144px;
+height: 114px;
+font-size: 16px;
+font-weight: 500;
+line-height: 24px;
+text-align: left;
+
+
+}
+@media (max-width: 768px) {
+  .green-box{
+    grid-template-columns: 1fr;
+  }
+}
+.poker{
+  width: 30px;
+  height: 26px;
+  top: 27px;
+  left: 26px;
+  border-radius: 60px;
+  box-shadow: 0px 4px 4px 0px #00000040;
+  margin-left: 20px;
+}
+@media (max-width: 768px) {
+  .poker {
+    grid-template-columns: 1fr;
+  }
+}
+@media (max-width: 768px) {
+  .box {
+    grid-template-columns: 1fr;
+  }
+}
+	</style>
+	</head>
+	<body>
+
+		<nav>
+			<div class="canti">
+				<p class="menu">Menu</p>
+				<ul class="men">
+					<li>Dashboard</li>
+					<li>List of quiz</li>
+					<li>personal questions</li>
+					<li>Settings</li>
+				</ul>
+			</div>
+
+		</nav>
+		<section>
+			<div class="water">
+				<img src="sun.png" alt="">
+				<p>26 c</p>
+				<p>its a sunny day today!</p>
+				<p style="color: #8E8F8F;" >dont forget to take your water bottle with you.</p>
+			</div>
+			<div class="three-box">
+				<div class="green"><p style="color: #55A55E;">Sensitivity</p></div>
+				<div class="purple"><p style="color: #5E5498;">Inflammation</p></div>
+				<div class="pink"><p style="color: #9B715D;">Redness</p></div>
+
+			</div>
+			<div class="box">
+				<div class="green-box" style="background-color:#EDFFEF">
+					<img class="poker" src="300.png" alt=""> 
+					<p style="color: #494949;">Niacinamide</p>
+					</div>
+				<div class="green-box" style="background-color: #FFF2EC" >
+					<img class="poker" src="44.png">
+					<p style="color: #494949;">Arginine</p>
+					 </div>
+				<div class="green-box" style="background-color: #F4F2FF;">
+					<img class="poker" src="60.png">
+					<p style="color: #494949;">collagen</p>
+					</div>
+					
+			</div>
+		</section>
+		<!-- <aside>
+			<div class="quiz">
+				<img class="beh" src="500.png" alt="">
+				<p class="acne">ACNE Goal<br>80 % clear</p>
+				<dav class="list">
+				<ul class="jadval" >
+					 <p style="color: #732F88;">Quiz Log</p> 
+					<li>Mon, 23 May 2022</li>
+					<li>Mon, 23 May 2022</li>
+					<li>Mon, 23 May 2022</li>
+					<li>Mon, 23 May 2022</li>
+					<li>Mon, 23 May 2022</li>
+				</ul>
+				</dav>
+			</div>
+
+            
+		</aside> -->
+
+	</body>
+</html>
+
